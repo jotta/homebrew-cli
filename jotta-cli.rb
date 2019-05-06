@@ -3,11 +3,11 @@ require 'formula'
 class JottaCli < Formula
   desc "Jottacloud CLI"
   homepage "https://www.jottacloud.com/"
-  version "0.5.14545"
+  version "0.5.15025"
 
   if Hardware::CPU.is_64_bit?
-    url "https://repo.jotta.us/archives/darwin/amd64/jotta-cli_0.5.14545_darwin_amd64.zip"
-    sha256 "eb89ab613122a98c9b1ac02dd7466cf678bcd88efda12a41e309ce4f3330c489"
+    url "https://repo.jotta.us/archives/darwin/amd64/jotta-cli_0.5.15025_darwin_amd64.zip"
+    sha256 "98bf3ffaacbf677665cdbe944c78b9f9266020c0edb4e8e3f6e12d3c4abeee8a"
   end
 
   depends_on :arch => :intel
