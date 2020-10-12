@@ -26,3 +26,7 @@ _NB_: remember to restart jotta-cli service after upgrade:
 ```brew services restart jotta-cli```
 
 
+### Unstable version
+
+see https://github.com/jotta/jotta-cli-issues#using-unstable-with-brew
+
