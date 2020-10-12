@@ -9,6 +9,8 @@ class JottaCli < Formula
     url "https://repo.jotta.us/archives/darwin/amd64/jotta-cli_0.6.32724_darwin_amd64.zip"
     sha256 "28e36a2841fe044620773fb1a00b0ee9419a8260d3671213f69dfe74b1cd7bb6"
   end
+  
+  conflicts_with "jotta-cli-unstable", :because => "jotta-cli-unstable is installed, brew uninstall jotta-cli-unstable before installing jotta-cli"
 
   depends_on :arch => :intel
 
