@@ -3,11 +3,11 @@ require 'formula'
 class JottaCliUnstable < Formula
   desc "Jottacloud CLI"
   homepage "https://www.jottacloud.com/"
-  version "0.9.38017"
+  version "0.9.39282"
 
   if Hardware::CPU.is_64_bit?
-    url "https://repo.jotta.us/archives-unstable/darwin/amd64/jotta-cli_0.9.38017_darwin_amd64.zip"
-    sha256 "fa7dc4b8ddefc53148d0a1f1099a577d06e783cb99417f5c9d9c92de3c4fd19c"
+    url "https://repo.jotta.us/archives-unstable/darwin/amd64/jotta-cli_0.9.39282_darwin_amd64.zip"
+    sha256 "39419b74b9bb2eb04fb5f64645e6806542181914456a9e55369ea32e276be780"
   end
 
   conflicts_with "jotta-cli", :because => "jotta-cli is installed, brew uninstall jotta-cli before installing jotta-cli-unstable"
