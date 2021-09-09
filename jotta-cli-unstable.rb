@@ -5,14 +5,15 @@ class JottaCliUnstable < Formula
   homepage "https://www.jottacloud.com/"
   version "0.11.45727"
 
-  if Hardware::CPU.is_64_bit?
+  if Hardware::CPU.intel?
     url "https://repo.jotta.us/archives-unstable/darwin/amd64/jotta-cli_0.11.45727_darwin_amd64.zip"
     sha256 "34b41d7a4f12304b07da7a4c9a3e1e284f332a8914bff4e02329b42e567794d2"
+  elsif Hardware::CPU.arm?
+    url "https://repo.jotta.us/archives-unstable/darwin/arm64/jotta-cli_0.11.45727_darwin_arm64.zip"
+    sha256 ""
   end
 
   conflicts_with "jotta-cli", :because => "jotta-cli is installed, brew uninstall jotta-cli before installing jotta-cli-unstable"
-
-  depends_on :arch => :intel
 
   def install
     bin.install 'jottad', 'jotta-cli'
