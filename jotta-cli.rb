@@ -15,6 +15,8 @@ class JottaCli < Formula
   
   conflicts_with "jotta-cli-unstable", :because => "jotta-cli-unstable is installed, brew uninstall jotta-cli-unstable before installing jotta-cli"
 
+  depends_on macos: :sierra
+  
   def install
     bin.install 'jottad', 'jotta-cli'
   end
