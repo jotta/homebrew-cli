@@ -21,7 +21,7 @@ class JottaCli < Formula
     bin.install 'jottad', 'jotta-cli'
   end
 
-  service.require_root :manual => "jottad"
+  plist_options :manual => "jottad"
 
   def plist; <<-EOS
     <?xml version="1.0" encoding="UTF-8"?>
