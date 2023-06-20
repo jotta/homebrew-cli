@@ -1,6 +1,6 @@
 # Jottacloud CLI homebrew 
 
-Requires macOS 10.12 (Sierra) or higher.
+Requires macOS 10.15 (catalina) or higher.
 
 ### Installing
 
